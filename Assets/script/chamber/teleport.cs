@@ -95,6 +95,42 @@ public class teleport : MonoBehaviour
             SendRayToDeleteCam();
         }
     }
+
+    public void skillOne()
+    {
+        if(tempObjectExists == false && tp == null)
+        {
+            stopAllSkills();
+            activeWeapons(false);
+            canSenRay = true;
+        }
+            
+    }
+    public void skillTwo()
+    {
+        if(tempObjectCamExist == false && cam == null)
+        {
+            stopAllSkills();
+            activeWeapons(false);
+            canSenRayTwo = true;
+        }
+        
+    }
+
+    public void skillThree()
+    {
+        stopAllSkills();
+        activeWeapons(false);
+        headHunter.SetActive(true);
+    }
+
+    public void skillFour()
+    {
+        stopAllSkills();
+        activeWeapons(false);
+        tourtheforce.SetActive(true);
+    }
+
     public void stopAllSkills()
     {
         if(tempTP != null)
@@ -181,10 +217,12 @@ public class teleport : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     canSenRay = false;
+                    canSenRayTwo = false;
                     Instantiate(camPrefab, place, Quaternion.Euler(0, 0, 0));
                     Destroy(tempCAM);
                     cam = GameObject.FindGameObjectWithTag("camara");
                     canSenRay = false;
+                    canSenRayTwo = false;
                     activeWeapons(true);
                 }
                 if (tempCAM != null)

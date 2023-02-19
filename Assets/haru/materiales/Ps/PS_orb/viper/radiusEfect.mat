@@ -2,14 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: radiusEfect
   m_Shader: {fileID: -6465566751694194690, guid: b43ca2d3c72108f489fa15b5a75a8f1e, type: 3}
-  m_ShaderKeywords: 
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -39,10 +40,26 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - Vector1_6733fadc9b5146a0be8fb6a7cf53424e: 0.01
     - Vector1_dc73c27e963e40a5b67815d99dd4eb4f: -0.43
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - Color_1a1a3bedea154a5cbc8238f12163e5b5: {r: 0.9529412, g: 0.8009873, b: 0, a: 0.7529412}
     - Color_3b9f2e7fd9c3436f8c1686ee71cccef9: {r: 0, g: 0, b: 0, a: 0.2901961}
   m_BuildTextureStacks: []
+--- !u!114 &5238803695026121059
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5

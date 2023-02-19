@@ -65,7 +65,7 @@ namespace StarterAssets
 		private float _fallTimeoutDelta;
 
 		//sound
-		public AudioSource pasos, saltar;
+		//public AudioSource pasos, saltar;
 
 	
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -230,7 +230,7 @@ namespace StarterAssets
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
 					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
-					saltar.Play();
+					//saltar.Play();
 				}
 
 				// jump timeout
